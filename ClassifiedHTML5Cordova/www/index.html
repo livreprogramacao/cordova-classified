@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!--HTML5 doctype-->
+<html>
+
+<head>
+
+    <title>Grid View Template</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" type="text/css" href="lib/appframework/icons.css" />
+    <link rel="stylesheet" type="text/css" href="lib/appframework/af.ui.css" />
+
+    <script type="text/javascript" charset="utf-8" src="lib/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="lib/fastclick.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="lib/appframework/appframework.ui.min.js"></script>
+        
+    <script src='cordova.js'></script>
+
+
+    <script>
+    $(document).ready(function(){
+        //$.afui.splitview.enable();
+    })
+    </script>
+
+    <style>
+    /* CSS responsive square grid */
+    .grid-photo {margin:3px -1px;}
+    .grid-photo:after {content:'';display:block;clear:both;}
+    .grid-photo li {position: relative; display:block; float:left; width: 10%; padding-bottom: 10%;}
+    .grid-photo .grid-photo-box {position: absolute;left: 3px;right: 3px;top: 3px;bottom: 3px; background-color: rgba(128,128,128,0.2);}
+    .grid-photo img {width:100%;height:100%}
+    @media only screen and (max-width : 1024px) {
+    .grid-photo li {width: 12.5%; padding-bottom: 12.5%;}
+    }
+    @media only screen and (max-width : 768px) {
+    .grid-photo li {width: 16.6%; padding-bottom: 16.6%;}
+    }
+    @media only screen and (max-width : 480px) {
+    .grid-photo li {width: 25%; padding-bottom: 25%;}
+    }
+    @media only screen and (max-width : 320px) {
+    .grid-photo li {width: 33.3%; padding-bottom: 33.3%;}
+    }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="splashscreen" class='ui-loader heavy'>
+        App Framework - Grid View
+        <br>
+        <br>
+        <span class='ui-icon ui-icon-loading spin'></span>
+        <h1>Starting app</h1>
+    </div>
+
+    <div class="view">
+        <header>
+            <h1>Title</h1>
+        </header>
+
+        <div class="pages">
+
+             <!--Initial Grid of items-->
+            <div class="panel grid" data-title="Categorias" id="grid" data-selected="true">
+              <div class="grid grid-photo">
+                <li><div class="grid-photo-box"><a href="#category1"><img src="images/categories/acompanhantes.jpg" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#category2"><img src="images/categories/alimentacao.png" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#category3"><img src="images/categories/eventos.jpg" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#category4"><img src="images/categories/festas.jpg" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#category5"><img src="images/categories/clinicas.jpg" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#category6"><img src="images/categories/bem-estar.png" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#category7"><img src="images/categories/detetives.jpg" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#category8"><img src="images/categories/diversos.jpg" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#category9"><img src="images/categories/produtos.jpg" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#category10"><img src="images/categories/servicos.jpg" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#category11"><img src="images/categories/leiloes.jpg" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#category12"><img src="images/categories/moveis.jpg" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#category13"><img src="images/categories/decoracao.jpg" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#category14"><img src="images/categories/jardinagem.jpg" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#category15"><img src="images/categories/profissionais-liberais.jpg" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#category16"><img src="images/categories/turismo.jpg" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#category17"><img src="images/categories/confeccoes.jpg" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#category18"><img src="images/categories/animais.jpg" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#category19"><img src="images/categories/construcao.jpg" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#category20"><img src="images/categories/lazer.png" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#category21"><img src="images/categories/bufes.jpg" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#category22"><img src="images/categories/informatica.jpg" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#category23"><img src="images/categories/aluguel.jpg" /></a></div></li>
+                <li><div class="grid-photo-box"><a href="#category24"><img src="images/categories/imoveis.jpg" /></a></div></li>
+            </div>
+            <a id="more" class="button block">Load More</a>
+            </div>
+
+            <!--Detail View Pages for each grid item-->
+            <div class="panel" data-title="Category 1" id="category1">
+                <p>Serviços associados a categoria 1</p>
+            </div>
+
+            <div class="panel" data-title="Category 2" id="category2">
+                <p>Serviços associados a categoria 2</p>
+            </div>
+
+            <div class="panel" data-title="Category 3" id="category3">
+                <p>Serviços associados a categoria 3</p>
+            </div>
+
+            <div class="panel" data-title="Category 4" id="category4">
+                <p>Serviços associados a categoria 4</p>
+            </div>
+
+            <div class="panel" data-title="Category 5" id="category5">
+                <p>Serviços associados a categoria 5</p>
+            </div>
+
+            <div class="panel" data-title="Category 6" id="category6">
+                <p>Serviços associados a categoria 6</p>
+            </div>
+
+            <div class="panel" data-title="Category 7" id="category7">
+                <p>Serviços associados a categoria 7</p>
+            </div>
+
+            <div class="panel" data-title="Category 8" id="category8">
+                <p>Serviços associados a categoria 8</p>
+            </div>
+
+            <div class="panel" data-title="Category 9" id="category9">
+                <p>Serviços associados a categoria 9</p>
+            </div>
+
+            <div class="panel" data-title="Category 10" id="category10">
+                <p>Serviços associados a categoria 10</p>
+            </div>
+
+            <div class="panel" data-title="Category 11" id="category11">
+                <p>Serviços associados a categoria 11</p>
+            </div>
+
+            <div class="panel" data-title="Category 12" id="category12">
+                <p>Serviços associados a categoria 12</p>
+            </div>
+
+            <div class="panel" data-title="Category 13" id="category13">
+                <p>Serviços associados a categoria 13</p>
+            </div>
+
+            <div class="panel" data-title="Category 14" id="category14">
+                <p>Serviços associados a categoria 14</p>
+            </div>
+
+            <div class="panel" data-title="Category 15" id="category15">
+                <p>Serviços associados a categoria 15</p>
+            </div>
+
+            <div class="panel" data-title="Category 16" id="category16">
+                <p>Serviços associados a categoria 16</p>
+            </div>
+
+            <div class="panel" data-title="Category 17" id="category17">
+                <p>Serviços associados a categoria 17</p>
+            </div>
+
+            <div class="panel" data-title="Category 18" id="category18">
+                <p>Serviços associados a categoria 18</p>
+            </div>
+
+            <div class="panel" data-title="Category 19" id="category19">
+                <p>Serviços associados a categoria 19</p>
+            </div>
+
+            <div class="panel" data-title="Category 20" id="category20">
+                <p>Serviços associados a categoria 20</p>
+            </div>
+
+            <div class="panel" data-title="Category 21" id="category21">
+                <p>Serviços associados a categoria 11</p>
+            </div>
+
+            <div class="panel" data-title="Category 22" id="category22">
+                <p>Serviços associados a categoria 12</p>
+            </div>
+
+            <div class="panel" data-title="Category 23" id="category23">
+                <p>Serviços associados a categoria 13</p>
+            </div>
+
+            <div class="panel" data-title="Category 24" id="category24">
+                <p>Serviços associados a categoria 14</p>
+            </div>
+            
+        </div>    
+    </div>
+
+
+</body>
+
+</html>
