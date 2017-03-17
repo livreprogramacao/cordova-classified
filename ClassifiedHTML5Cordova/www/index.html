@@ -8,7 +8,6 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="lib/w3css/w3.css">
     <link rel="stylesheet" type="text/css" href="lib/appframework/icons.css" />
     <link rel="stylesheet" type="text/css" href="lib/appframework/af.ui.css" />
 
@@ -75,6 +74,7 @@
             }
         }
     </style>
+    <link rel="stylesheet" href="lib/w3css/w3.css">
 
     <title>Category Grid View</title>
 
@@ -225,21 +225,40 @@
             </div>
 
             <!--Detail View Pages for each grid item-->
+            <!-- Category 1 -->
             <div class="panel" data-title="Category 1" id="category1">
-                <img src="images/categories/acompanhantes.jpg" alt="Acompanhantes">
 
-                <div class="w3-container w3-teal">
-                <h1>My Header</h1>
+                <!-- W3.CSS -->
+
+                <!-- Sidebar -->
+                <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+                <h3 class="w3-bar-item">Menu</h3>
+                <a href="#" class="w3-bar-item w3-button">Link 1</a>
+                <a href="#" class="w3-bar-item w3-button">Link 2</a>
+                <a href="#" class="w3-bar-item w3-button">Link 3</a>
                 </div>
 
-                <div class="w3-container">
-                    <p>A car is a wheeled, self-powered motor vehicle used for transportation.</p>
+                <!-- Page Content -->
+                <div style="margin-left:25%">
+
+                    <div class="w3-container w3-teal">
+                    <img id="category1.detail.img" src="images/categories/acompanhantes.jpg" alt="Car">
+                    <h1>My Page</h1>
+                    </div>
+
+
+                    <div class="w3-container">
+                    <h2>Sidebar Navigation Example</h2>
+                    <p>The sidebar with is set with "style="width:25%".</p>
+                    <p>The left margin of the page content is set to the same value.</p>
+                    </div>
+
                 </div>
 
-                <div class="w3-container w3-teal">
-                    <p>My Footer</p>
-                </div>
+                <!-- /W3.CSS -->
+
             </div>
+            <!-- /Category 1 -->
 
             <div class="panel" data-title="Category 2" id="category2">
                 <p>Serviços associados a categoria 2</p>
