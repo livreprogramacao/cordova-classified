@@ -5,7 +5,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.webapp",
       "src": "webapp/template-grid-view/sample.zip",
       "projectGuid": "24ed9816-b2f7-4699-9267-d5aa80acff52",
-      "lastModifiedDate": 1489595557186,
+      "lastModifiedDate": 1501854009762,
       "creationDate": 1489595492588
     },
     "sourceDirectory": "www",
@@ -22,6 +22,13 @@
     },
     "projectDirectories": {
       "www/xdk": {
+        "settings": {
+          "project": {
+            "XDK-generated": "true"
+          }
+        }
+      },
+      "xdk/services/iodocs": {
         "settings": {
           "project": {
             "XDK-generated": "true"
@@ -57,7 +64,7 @@
         "addlPermissions_": "",
         "excludedLibraries_": "",
         "iosProvs_": [],
-        "cordovaCLIVersion_": "6.2.0",
+        "cordovaCLIVersion_": "6.5.0",
         "appVersion_": "0.0.1",
         "appAuthor_": "Intel XDK"
       },
@@ -82,7 +89,7 @@
         "addlPermissions_": "",
         "excludedLibraries_": "",
         "iosProvs_": [],
-        "cordovaCLIVersion_": "6.2.0",
+        "cordovaCLIVersion_": "6.5.0",
         "appVersion_": "0.0.1",
         "appAuthor_": "Intel XDK"
       },
@@ -201,7 +208,7 @@
         "icons_": [],
         "splashes_": [],
         "appVersion_": "0.0.0.1",
-        "cordovaCLIVersion_": "6.2.0"
+        "cordovaCLIVersion_": "6.5.0"
       },
       "Android": {
         "platform_": "android",
@@ -228,7 +235,7 @@
         "addlPermissions_": "",
         "excludedLibraries_": "",
         "iosProvs_": [],
-        "cordovaCLIVersion_": "6.2.0",
+        "cordovaCLIVersion_": "6.5.0",
         "appVersion_": "0.0.1",
         "appVersionCode_": "1",
         "crosswalkVersion_": "19",

@@ -5,7 +5,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "jsapp/template-grid-view-js/sample.zip",
       "projectGuid": "f95f3ab4-26ee-4984-83c5-65a7b6adaa29",
-      "lastModifiedDate": 1489595300965,
+      "lastModifiedDate": 1489762964991,
       "creationDate": 1489595227824
     },
     "sourceDirectory": "www",
@@ -135,7 +135,7 @@
           "ios-configuration": "adhoc",
           "deployment-target": "8.0"
         },
-        "isActive_": true,
+        "isActive_": false,
         "certificateId_": "",
         "appName_": "Classified",
         "appID_": "not.yet.specified",

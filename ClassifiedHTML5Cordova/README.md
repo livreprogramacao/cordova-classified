@@ -14,8 +14,7 @@ Intel(R) XDK
 -------------------------------------------
 This template is part of the Intel(R) XDK. 
 Download the Intel XDK at http://software.intel.com/en-us/html5.
-To see the technical detail of the template, please visit the article page 
-at http://software.intel.com/en-us/html5/articles/templates-to-get-started-with-html5-mobile-app-development. 
+To see the technical detail of the template, please visit the [article page](http://software.intel.com/en-us/html5/articles/templates-to-get-started-with-html5-mobile-app-development). 
 
 Application Files
 -----------------
